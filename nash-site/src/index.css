@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code { 
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.home{
+  width: 100px;
+  height: 100px;
+}
+
+#ajax-content{width:100%;}
+
+.portfolio-grid{
+  width:500px;
+  position:absolute;
+  margin: 30px auto;
+  overflow:hidden;
+  
+}
+
+#portfolio-sidebar{ /* размер карточки */
+  width: 1300px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right:5px;
+  
+}
+
+li.grid-item{
+  width:360px;
+  position:relative;
+  float:left;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.grid-hover{
+  position: absolute;
+  width:255px;
+  height: 100%;
+  top:0;
+  background: white;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in; 
+}
+
+.grid-hover:hover{ /* Непрозрачность */
+  opacity: 0.9;
+}
+
+.grid-hover h1{ /*настройки загаловка пикчи*/
+  font-size:12px;
+  bottom:60px;
+  left:50px;
+  top:90px;
+  right:50px;
+  position:absolute;
+  text-transform:uppercase;
+  color:#1a1818;
+  letter-spacing:1px;
+  font-weight:900;
+  line-height:50px;
+  text-align: center;
+}
+
+.grid-hover p{ /*настройки описание пикчи*/
+  font-size:10px;
+  bottom:3px;
+  left:30px;
+  position:absolute;
+  color:#686868;
+  letter-spacing:1px;
+  font-weight:400;
+  line-height:50px;
+}
+
+li.grid-item img{ /*размер пикчи под затемнением */
+  width:100px;
+}
+
+ol, ul { /* убрать точку из списка */
+  list-style: none;
+}
+
+.text-center{ /* Название в разделе фототека */
+  padding-top: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+.categories{
+  text-align: center;
+  padding-top: 20%;
+}
+
+.textblog{ /* текст внутри блога */
+  font-size:13px;
+  bottom:3px;
+  color:#686868;
+  letter-spacing:normal;
+  font-weight:400;
+}
+
+.nazblog{ /* загаловок блога */
+  margin-top: 6%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 650;
+  font-family: "Courier";
+}
+
+.imgblog{ /* настройка пикчи блога */
+  width: 150px;
+  height: 120px;
+  border-radius: 12px;
+  border: 2px solid rgba(226, 223, 220, 0.908);
+}
+
+.cart{ /* */
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.cont{
+  border:2px solid rgba(220, 220, 226, 0.908);
+  border-radius: 42px;
+  background-color: rgb(255, 255, 255);
+}
+
+.bgcolor{
+  background-color: #f2f2f2;
+}
+
+.linia{
+  color: #787373;
+}
+
+.categories{ /* загаловок во вкладке блог */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+}
+
+.ssilka{ /* ссылка для перехода на статью из блога */
+  color: black;
+  text-decoration: none;
+}
+
+.textblognaz{
+  margin-top: 5px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Courier";
+}
+
+.ramka{ /* рамка для текста блога */
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+  border:2px solid rgba(226, 223, 220, 0.908);
+  border-radius: 42px;
+  
+  background-color: whitesmoke;
+}
+
+.posttext{
+  font-size: auto;
+  margin: 20px;
+  /*border:2px solid rgba(255, 94, 0, 0.908);
+  border-radius: 42px;*/
+}
+
+.imgblogtext{ /* настройка пикчи блога */
+  text-align: center;
+  margin-top: 5px;
+  margin-left:7px;
+  width: 1100px;
+  height: 300px;
+  border: 2px solid rgba(226, 223, 220, 0.908);
+  border-radius: 42px;
+}
+
+.asdasd{ /* было в классе me-auto */
+  margin-left: 380px;
+  margin-right: 380px;
+}
+
+
+.hometext{ /* текст на дом стр */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  margin: 80px;
+  text-align: center;
+}
+
+.ramkahome{ /* рамка для текста дом стр */
+  margin-bottom: 1px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  
+  border:2px solid rgba(226, 223, 220, 0.908);
+  border-radius: 42px;
+  background-color: whitesmoke;
+}
+
+.carslider{ /*размеры слайдера с пикчами на домашней стр */
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.d-block{ /* настройка пикчей слайдера на дом стр */
+  width: 100%;
+  border:2px solid rgba(226, 223, 220, 0.908);
+  border-radius: 42px;
+}
+
+
+.logocon{
+  border:2px solid rgba(226, 223, 220, 0.908);
+  border-radius: 50px;
+}
+
+.imgcon{ /* настройка пикчи блога */
+  margin-bottom: 30px;
+  margin-top: 5px;
+  width: 100px;
+  height: 100px;
+  
+}
+
+.contcontacts{
+  margin-right: 150px;
+  margin-left: 150px;
+  border:2px solid rgba(220, 220, 226, 0.908);
+  border-radius: 42px;
+  background-color: rgb(255, 255, 255);
+}
+
+.nazcont{ /* загаловок блога */
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 650;
+  font-family: "Courier";
+}
+
+.opisaniecontacts{
+  font-size:13px;
+  margin-left: 10px;
+  color:#686868;
+  letter-spacing:normal;
+  font-weight:400;
+}
+
